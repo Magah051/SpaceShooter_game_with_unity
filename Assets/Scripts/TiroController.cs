@@ -8,6 +8,8 @@ public class TiroController : MonoBehaviour
     //Declarando o Rigdbody2D
     private Rigidbody2D meuRB;
     [SerializeField] private float vel = 10f;
+    
+
     void Start()
     {
         //Pegando meu Rigdbody
