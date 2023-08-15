@@ -202,7 +202,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1302836756169065389, guid: 1542d0c6e431c6741983b5ba3da472dc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.16
+      value: 6.22
       objectReference: {fileID: 0}
     - target: {fileID: 1302836756169065389, guid: 1542d0c6e431c6741983b5ba3da472dc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -239,6 +239,14 @@ PrefabInstance:
     - target: {fileID: 2297854867832920370, guid: 1542d0c6e431c6741983b5ba3da472dc, type: 3}
       propertyPath: m_Name
       value: Inimigo 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3373239722050429319, guid: 1542d0c6e431c6741983b5ba3da472dc, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4884588219310699471, guid: 1542d0c6e431c6741983b5ba3da472dc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.036
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -418,6 +426,10 @@ PrefabInstance:
     - target: {fileID: 900134912270294315, guid: e3e50be244d980a48a161266d340a76d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357849452121021709, guid: e3e50be244d980a48a161266d340a76d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 6022516214247579982, guid: e3e50be244d980a48a161266d340a76d, type: 3}
       propertyPath: m_Name

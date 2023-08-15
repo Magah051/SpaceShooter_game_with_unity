@@ -8,6 +8,9 @@ public class Inimigo01Controller : MonoBehaviour
     private Rigidbody2D meuRB;
     [SerializeField] private float velocidade = -3f;
 
+    //Pegando o transform da posição do meu tiro
+    [SerializeField] private Transform posicaoTiro;
+
     //Meu tiro
     [SerializeField] private GameObject meuTiro;
 
@@ -41,7 +44,7 @@ public class Inimigo01Controller : MonoBehaviour
             if (esperaTiro <= 0)
             {
                 //Instanciando o meu tiro
-                Instantiate(meuTiro, transform.position, transform.rotation);
+                Instantiate(meuTiro, posicaoTiro.position, transform.rotation);
 
                 //Reiniciar a nossa espera
                 esperaTiro = Random.Range(1.5f, 2f);

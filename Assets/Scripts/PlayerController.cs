@@ -8,9 +8,11 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D meuRB;
     [SerializeField] private float velocidade = 5f;
     [SerializeField] private GameObject meuTiro;
+    //Pegando o transform da posição do meu tiro
+    [SerializeField] private Transform posicaoTiro;
 
     // Start is called before the first frame update
-        void Start()
+    void Start()
     {
         //Pegando o Rigdbody2D
         meuRB = GetComponent<Rigidbody2D>();
@@ -31,7 +33,7 @@ public class PlayerController : MonoBehaviour
         //Atirando
         if (Input.GetButtonDown("Fire1"))
         {
-            Instantiate(meuTiro, transform.position, transform.rotation);
+            Instantiate(meuTiro, posicaoTiro.position, transform.rotation);
         }
     }
 }
