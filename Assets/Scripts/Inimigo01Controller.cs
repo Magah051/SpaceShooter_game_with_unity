@@ -29,16 +29,26 @@ public class Inimigo01Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Diminuir a minha espera, e se ela for menor ou igual a zero, então eu atiro.
-        esperaTiro -= Time.deltaTime;
-        if(esperaTiro <= 0)
-        {
-            //Instanciando o meu tiro
-            Instantiate(meuTiro, transform.position, transform.rotation);
+        //Checar se meu sprite renderer está visível
 
-            //Reiniciar a nossa espera
-            esperaTiro = Random.Range(1.5f, 2f);
+        //Pegando informaçõs dos meus filhos
+        bool visivel = GetComponentInChildren<SpriteRenderer>().isVisible;
+
+        if (visivel)
+        {
+            //Diminuir a minha espera, e se ela for menor ou igual a zero, então eu atiro.
+            esperaTiro -= Time.deltaTime;
+            if (esperaTiro <= 0)
+            {
+                //Instanciando o meu tiro
+                Instantiate(meuTiro, transform.position, transform.rotation);
+
+                //Reiniciar a nossa espera
+                esperaTiro = Random.Range(1.5f, 2f);
+            }
         }
+
+
 
 
 

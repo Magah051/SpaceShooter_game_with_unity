@@ -240,38 +240,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Inimigo 01
       objectReference: {fileID: 0}
-    - target: {fileID: 2297854867832920370, guid: 1542d0c6e431c6741983b5ba3da472dc, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4476625454977505489, guid: 1542d0c6e431c6741983b5ba3da472dc, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8740895266347872904, guid: 1542d0c6e431c6741983b5ba3da472dc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8740895266347872904, guid: 1542d0c6e431c6741983b5ba3da472dc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8740895266347872904, guid: 1542d0c6e431c6741983b5ba3da472dc, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8740895266347872904, guid: 1542d0c6e431c6741983b5ba3da472dc, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8740895266347872904, guid: 1542d0c6e431c6741983b5ba3da472dc, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8740895266347872904, guid: 1542d0c6e431c6741983b5ba3da472dc, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -451,17 +419,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4735195259863184008, guid: e3e50be244d980a48a161266d340a76d, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 6022516214247579982, guid: e3e50be244d980a48a161266d340a76d, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 6022516214247579982, guid: e3e50be244d980a48a161266d340a76d, type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
