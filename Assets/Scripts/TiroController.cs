@@ -8,7 +8,8 @@ public class TiroController : MonoBehaviour
     //Declarando o Rigdbody2D
     private Rigidbody2D meuRB;
     [SerializeField] private float vel = 10f;
-    
+    [SerializeField] private GameObject impacto;
+
 
     void Start()
     {
@@ -40,5 +41,8 @@ public class TiroController : MonoBehaviour
             collision.GetComponent<PlayerController>().perdeVida(1);
         }
         Destroy(gameObject);
+
+        //Criando o impacto
+        Instantiate(impacto, transform.position, transform.rotation);
     }
 }
