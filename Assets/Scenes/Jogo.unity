@@ -123,6 +123,46 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &1027606533 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6022516214247579982, guid: e3e50be244d980a48a161266d340a76d, type: 3}
+  m_PrefabInstance: {fileID: 4454186176780109947}
+  m_PrefabAsset: {fileID: 0}
+--- !u!70 &1027606537
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027606533}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 1}
+  m_Direction: 0
 --- !u!1001 &1069952426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -184,6 +224,46 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 338020ec98da8ac408d5e8019a5a4fa6, type: 3}
+--- !u!1 &2048200444 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2297854867832920370, guid: 1542d0c6e431c6741983b5ba3da472dc, type: 3}
+  m_PrefabInstance: {fileID: 611503497598383154}
+  m_PrefabAsset: {fileID: 0}
+--- !u!70 &2048200445
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048200444}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 1}
+  m_Direction: 0
 --- !u!1001 &611503497598383154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -240,6 +320,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Inimigo 01
       objectReference: {fileID: 0}
+    - target: {fileID: 3123186785596158602, guid: 1542d0c6e431c6741983b5ba3da472dc, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3373239722050429319, guid: 1542d0c6e431c6741983b5ba3da472dc, type: 3}
       propertyPath: m_Icon
       value: 
@@ -251,7 +335,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2297854867832920370, guid: 1542d0c6e431c6741983b5ba3da472dc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2048200445}
   m_SourcePrefab: {fileID: 100100000, guid: 1542d0c6e431c6741983b5ba3da472dc, type: 3}
 --- !u!1001 &1657853607714783190
 PrefabInstance:
@@ -435,8 +522,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8498346655496357487, guid: e3e50be244d980a48a161266d340a76d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6022516214247579982, guid: e3e50be244d980a48a161266d340a76d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1027606537}
   m_SourcePrefab: {fileID: 100100000, guid: e3e50be244d980a48a161266d340a76d, type: 3}

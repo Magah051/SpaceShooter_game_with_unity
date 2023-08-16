@@ -26,6 +26,8 @@ public class TiroController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //Pegar o método PerdeVida e aplicar nele o dano
+        collision.GetComponent<Inimigo01Controller>().PerdeVida(1);
         Destroy(gameObject);
     }
 }

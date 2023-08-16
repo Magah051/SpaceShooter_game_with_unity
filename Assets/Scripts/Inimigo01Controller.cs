@@ -11,6 +11,8 @@ public class Inimigo01Controller : MonoBehaviour
     //Pegando o transform da posição do meu tiro
     [SerializeField] private Transform posicaoTiro;
 
+    [SerializeField] private int vida = 1;
+
     //Meu tiro
     [SerializeField] private GameObject meuTiro;
 
@@ -51,9 +53,11 @@ public class Inimigo01Controller : MonoBehaviour
             }
         }
 
+   }
 
-
-
-
+    public void PerdeVida(int dano)
+    {
+        //Perdendo a minha vida com base no dano
+        vida -= dano;
     }
 }
