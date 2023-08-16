@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     //Pegando o transform da posição do meu tiro
     [SerializeField] private Transform posicaoTiro;
 
+    [SerializeField] private int vida = 3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,5 +37,10 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(meuTiro, posicaoTiro.position, transform.rotation);
         }
+    }
+
+    public void perdeVida (int dano)
+    {
+        vida -= dano;
     }
 }

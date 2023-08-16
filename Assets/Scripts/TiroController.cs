@@ -27,7 +27,18 @@ public class TiroController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Pegar o método PerdeVida e aplicar nele o dano
-        collision.GetComponent<Inimigo01Controller>().PerdeVida(1);
+        //Checando se a tag de quem eu esotu colidindo é inimigo 01.
+        if (collision.CompareTag("Inimigo01"))
+        {
+            collision.GetComponent<Inimigo01Controller>().PerdeVida(1);
+        }
+        
+        //Checando se eu colidi com o player
+
+        if (collision.CompareTag("Jogador"))
+        {
+            collision.GetComponent<PlayerController>().perdeVida(1);
+        }
         Destroy(gameObject);
     }
 }
