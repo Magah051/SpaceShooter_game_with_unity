@@ -13,6 +13,9 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private int vida = 3;
 
+    //Minha explosão
+    [SerializeField] private GameObject explosao;
+
     
     // Start is called before the first frame update
     void Start()
@@ -43,5 +46,12 @@ public class PlayerController : MonoBehaviour
     public void perdeVida (int dano)
     {
         vida -= dano;
+        if (vida <= 0)
+        {
+            //Me destruindo
+            Destroy(gameObject);
+            //Criando a explosão
+            Instantiate(explosao, transform.position, transform.rotation);
+        }
     }
 }

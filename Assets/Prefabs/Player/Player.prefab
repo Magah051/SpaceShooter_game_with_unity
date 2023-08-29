@@ -188,6 +188,8 @@ MonoBehaviour:
   velocidade: 5
   meuTiro: {fileID: 5954480874648123828, guid: 915baf8d1170003459c08e4ca01dc8e0, type: 3}
   posicaoTiro: {fileID: 4357849452121021709}
+  vida: 1
+  explosao: {fileID: 4159451284943653061, guid: 42b62d870ddd9e4439588bd16b36f19f, type: 3}
 --- !u!50 &8498346655496357487
 Rigidbody2D:
   serializedVersion: 4
