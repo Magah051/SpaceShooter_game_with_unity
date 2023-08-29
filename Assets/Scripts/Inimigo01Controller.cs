@@ -16,6 +16,8 @@ public class Inimigo01Controller : MonoBehaviour
     //Meu tiro
     [SerializeField] private GameObject meuTiro;
 
+    [SerializeField] private GameObject explosao;
+         
     private float esperaTiro = 1f;
 
     // Start is called before the first frame update
@@ -59,5 +61,13 @@ public class Inimigo01Controller : MonoBehaviour
     {
         //Perdendo a minha vida com base no dano
         vida -= dano;
+        //Checando se eu morri
+        if (vida <= 0)
+        {
+            Destroy(gameObject);
+
+            //Criando a minha explosão
+            Instantiate(explosao, transform.position, transform.rotation);
+        }
     }
 }
