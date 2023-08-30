@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8979757952743728888}
   m_Layer: 6
   m_Name: Inimigo 01
-  m_TagString: Inimigo01
+  m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,7 +34,7 @@ Transform:
   - {fileID: 8740895266347872904}
   - {fileID: 4884588219310699471}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &3123186785596158602
 Rigidbody2D:
@@ -76,8 +76,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: -3
-  posicaoTiro: {fileID: 4884588219310699471}
   vida: 1
+  explosao: {fileID: 4159451284943653061, guid: 42b62d870ddd9e4439588bd16b36f19f, type: 3}
+  posicaoTiro: {fileID: 4884588219310699471}
   meuTiro: {fileID: 4988357150895050, guid: 1ebe38cd6588d9e4fa44022b5af3f403, type: 3}
 --- !u!70 &8979757952743728888
 CapsuleCollider2D:
