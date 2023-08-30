@@ -2,21 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inimigo01Controller : MonoBehaviour
+public class Inimigo01Controller : InimigoPai
 {
     //Pegar o Rigdbody
     private Rigidbody2D meuRB;
-    [SerializeField] private float velocidade = -3f;
 
     //Pegando o transform da posição do meu tiro
     [SerializeField] private Transform posicaoTiro;
 
-    [SerializeField] private int vida = 1;
-
     //Meu tiro
     [SerializeField] private GameObject meuTiro;
 
-    [SerializeField] private GameObject explosao;
          
     private float esperaTiro = 1f;
 
@@ -57,17 +53,5 @@ public class Inimigo01Controller : MonoBehaviour
 
    }
 
-    public void PerdeVida(int dano)
-    {
-        //Perdendo a minha vida com base no dano
-        vida -= dano;
-        //Checando se eu morri
-        if (vida <= 0)
-        {
-            Destroy(gameObject);
 
-            //Criando a minha explosão
-            Instantiate(explosao, transform.position, transform.rotation);
-        }
-    }
 }
